@@ -1,0 +1,46 @@
+body {
+    background-color: brown;
+    padding: 1rem;
+  }
+  
+  .tabs-component .tabs-button-wrapper {
+    display: flex;
+  }
+  
+  .tabs-component .tabs-button-wrapper .tab-button {
+    background-color: white;
+    padding: 1rem;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .tabs-component .tabs-button-wrapper .tab-button.active {
+    font-weight: bold;
+    color: red;
+    box-shadow: 0 2px 0 -1px white;
+  }
+  
+  .tabs-component .tabs-button-wrapper .tab-button:first-child {
+    border-radius: 8px 0 0 0; 
+  }
+  
+  .tabs-component .tabs-button-wrapper .tab-button:last-child {
+    border-radius: 0 8px 0 0; 
+  }
+  
+  .tabs-content-wrapper {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0 8px 8px 8px;
+    border: 1px solid black;
+  }
+  
+  .tabs-content-wrapper .tab-content {
+    margin-bottom: 1rem;
+    display: none;
+  }
+  
+  .tabs-content-wrapper .tab-content.active {
+    display: block;
+  }
